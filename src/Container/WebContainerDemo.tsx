@@ -105,7 +105,7 @@ export default function App() {
                 );
 
                 // Wait for server ready
-                wc.on('server-ready', (port, url) => {
+                wc.on('server-ready', (_port: any, url) => {
                     setIframeUrl(url);
                     setLoading(false);
                 });
